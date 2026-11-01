@@ -5,4 +5,5 @@ description: "This mod adds a [#eedd55]fully functional [#ea8d22]nuclear power p
 subtitle: "[#eedd55]ATOMIC POWER AWAITS YOU!"
 version: "[#eedd55]BETA-RELEASE-1.2"
 minGameVersion: "160"
+icon: "icon.png"
 main: "acidfactory.AcidFactoryMod"
