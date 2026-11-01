@@ -1,0 +1,13 @@
+{
+    "type": "liquid",
+    "name": "waste-liquid",
+    "localizedName": "Waste Liquid",
+    "description": "This is already a used fluid - a waste product. It's essentially useless; it is just trash. However, it can be converted back into ordinary water using a waste filter.",
+    "color": "8B4513",
+    "gas": false,
+    "flammability": 0.0,
+    "heatCapacity": 0.5,
+    "viscosity": 0.8,
+    "explosiveness": 0.0,
+    "effect": "radiation"
+}

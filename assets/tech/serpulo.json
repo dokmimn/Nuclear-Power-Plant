@@ -1,0 +1,13 @@
+[
+  {
+    "parent": "thorium-reactor",
+    "nodes": [
+      {
+        "content": "acidfactory-nuclear-power-plant",
+        "requires": [
+          "thorium-reactor"
+        ]
+      }
+    ]
+  }
+]

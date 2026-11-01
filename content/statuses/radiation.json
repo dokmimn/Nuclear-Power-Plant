@@ -1,0 +1,10 @@
+{
+    "type": "status",
+    "name": "radiation",
+    "localizedName": "Radiation",
+    "description": "Severe radioactive contamination.",
+    "damage": 4.0,
+    "speedMultiplier": 0.3,
+    "color": "33ff33",
+    "effectChance": 0.3
+}

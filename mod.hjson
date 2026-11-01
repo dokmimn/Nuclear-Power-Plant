@@ -1,0 +1,8 @@
+name: "acid-factory"
+displayName: "Nuclear Power Plant"
+author: "[#eedd55]do[#ea8d22]km[#e55454]imn[#eedd55]"
+description: "This mod adds a [#eedd55]fully functional [#ea8d22]nuclear power plant [#ffffff]capable of triggering a nuclear explosion!"
+subtitle: "[#eedd55]ATOMIC POWER AWAITS YOU!"
+version: "[#eedd55]BETA-RELEASE-1.2"
+minGameVersion: "160"
+main: "acidfactory.AcidFactoryMod"
