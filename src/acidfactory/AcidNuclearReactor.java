@@ -273,6 +273,15 @@ public class AcidNuclearReactor extends ConsumeGenerator {
                 Draw.blend(Blending.normal);
                 Draw.reset();
             }
+            if (working) {
+                Draw.blend(Blending.additive);
+                Color yellowPlasma = Color.valueOf("fffb00");
+                float pulse = 14f + Mathf.sin(Time.time, 3f, 4f);
+                Draw.color(yellowPlasma, 0.5f + Mathf.sin(Time.time, 2.5f, 0.2f));
+                Fill.circle(x, y, pulse);
+                Draw.blend(Blending.normal);
+                Draw.reset();
+            }
 
             if (customHeat > 0.5f && heatRegion != Core.atlas.find("clear")) {
                 float heatT = Mathf.clamp((customHeat - 0.5f) / 0.5f);
