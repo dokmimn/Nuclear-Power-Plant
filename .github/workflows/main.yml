@@ -1,0 +1,38 @@
+name: Build Mod
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android Build-Tools
+        run: sdkmanager "build-tools;34.0.0" "platforms;android-34"
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build Desktop & Android JAR
+        run: ./gradlew deploy
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ExpandedSerpulo-Android-Desktop
+          path: build/libs/*.jar
